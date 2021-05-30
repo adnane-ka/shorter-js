@@ -1,6 +1,8 @@
 # shorter-js 
 a curated list for Javascript tricks & tips to write a shorter & cleaner code with Javascipt built-in features . 
 
+> check the Laravel Version of this file [here](https://github.com/adnane-ka/shorter-lara) .
+
 #### Arrays 
 * Filter Unique Values .
 * Remove Falsy Values From Arrays .
