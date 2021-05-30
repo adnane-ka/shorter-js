@@ -36,8 +36,11 @@ myArray.filter(Boolean);
 
 ```
 ### Shorthand Way To Sort numbers arrays 
+
+```js
 [0,10,4,9,123,54,1].sort((a,b) => a-b);
 >>> [0, 1, 4, 9, 10, 54, 123]
+```
 ---
 ## Loops 
 
