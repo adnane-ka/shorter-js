@@ -19,6 +19,7 @@ a curated list for Javascript tricks & tips to write a shorter & cleaner code wi
 * Throw Console Errors !
 * Get Query Params ! 
 * Disable Right Click
+* Customize Console Messages !
 
 ---
 ## Arrays 
@@ -121,6 +122,12 @@ let nyParam = new URLSearchParams(location.search).get('nyParam');
 <body oncontextmenu="return false">
     <div></div>
 </body>
+```
+
+### Customize Console Messages !
+```js 
+var msg = 'Thats a Msg!';
+console.log('%c'+msg, 'color: red; border: 1px solid black;');
 ```
 ---
 
