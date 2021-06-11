@@ -23,6 +23,7 @@ a curated list for Javascript tricks & tips to write a shorter & cleaner code wi
 * Generate a unique ID .
 * Check If the User has Scrolled to the Bottom of the Page 
 * Quick way to generate a Random Hex Color
+* Strip HTML From Text
 
 ---
 ## Arrays 
@@ -147,4 +148,11 @@ const scrolledToBottom = () => document.documentElement.clientHeight + window.sc
 
 ```js
 const hexColor = () => "#" + Math.floor(Math.random() * 0xffffff).toString(16).padEnd(6, '0');
+```
+
+### Strip HTML From Text 
+When accepting user inputs and in other use cases, you might want to strip any HTML elements in the text you process. With the help of DOMParser, this is only one line.
+
+```js 
+const stripHtml = html => (new DOMParser().parseFromString(html, 'text/html')).body.textContent || '';
 ```
