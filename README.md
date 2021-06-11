@@ -21,6 +21,7 @@ a curated list for Javascript tricks & tips to write a shorter & cleaner code wi
 * Disable Right Click
 * Customize Console Messages !
 * Generate a unique ID .
+* Check If the User has Scrolled to the Bottom of the Page 
 
 ---
 ## Arrays 
@@ -135,4 +136,9 @@ console.log('%c'+msg, 'color: red; border: 1px solid black;');
 ### Generate a unique ID .
 ```js 
 const randomID = Math.random().toString(36).substring(2);
+```
+
+### Check If the User has Scrolled to the Bottom of the Page
+```js 
+const scrolledToBottom = () => document.documentElement.clientHeight + window.scrollY >= document.documentElement.scrollHeight
 ```
