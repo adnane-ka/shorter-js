@@ -20,6 +20,7 @@ a curated list for Javascript tricks & tips to write a shorter & cleaner code wi
 * Get Query Params ! 
 * Disable Right Click
 * Customize Console Messages !
+* Generate a unique ID .
 
 ---
 ## Arrays 
@@ -131,4 +132,7 @@ console.log('%c'+msg, 'color: red; border: 1px solid black;');
 ```
 ---
 
-
+### Generate a unique ID .
+```js 
+const randomID = Math.random().toString(36).substring(2);
+```
