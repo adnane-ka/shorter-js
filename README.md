@@ -22,6 +22,7 @@ a curated list for Javascript tricks & tips to write a shorter & cleaner code wi
 * Customize Console Messages !
 * Generate a unique ID .
 * Check If the User has Scrolled to the Bottom of the Page 
+* Quick way to generate a Random Hex Color
 
 ---
 ## Arrays 
@@ -141,4 +142,9 @@ const randomID = Math.random().toString(36).substring(2);
 ### Check If the User has Scrolled to the Bottom of the Page
 ```js 
 const scrolledToBottom = () => document.documentElement.clientHeight + window.scrollY >= document.documentElement.scrollHeight
+```
+### Quick way to generate a Random Hex Color
+
+```js
+const hexColor = () => "#" + Math.floor(Math.random() * 0xffffff).toString(16).padEnd(6, '0');
 ```
